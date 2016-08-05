@@ -1,0 +1,26 @@
+h1 {
+    color: green;
+}
+
+.blue {
+    background-color: darkblue;
+    height: auto;
+    padding: 50px;
+}
+.blue > img {
+    height: 290px;
+    margin: auto;
+}
+
+.red {
+    background-color: palevioletred;
+    height: 300px;
+}
+.green {
+    background-color: darkseagreen;
+    height: 100px;
+}
+.yellow {
+    background-color: yellow;
+    height: 200px;
+}
