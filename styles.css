@@ -1,5 +1,7 @@
 h1 {
-    color: green;
+    color: #555555;
+    font-size: 85px;
+    text-align: center;
 }
 
 .blue {
@@ -23,4 +25,15 @@ h1 {
 .yellow {
     background-color: yellow;
     height: 200px;
+}
+h2 {
+    text-align: center;
+}
+i {
+    font-size: 115px;
+    color: #bbbbbb
+
+}
+h1, h2 {
+    font-family: "Courier New", Courier, monospace
 }
