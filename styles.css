@@ -2,42 +2,52 @@ body {
     font-family: "Courier New", Courier, monospace
 }
 
+/** Global H1 styles **/
 h1 {
     color: #555555;
     font-size: 85px;
     text-align: center;
 }
 
-.blue {
-    background-color: darkblue;
-    height: auto;
-    padding: 50px;
-}
-.blue > img {
-    height: 290px;
-    margin: auto;
-}
-
-.red {
-    background-color: palevioletred;
-    height: 300px;
-}
-.green {
-    background-color: darkseagreen;
-    height: 100px;
-}
-.yellow {
-    background-color: yellow;
-    height: 200px;
-}
+/** Global H2 styles **/
 h2 {
     text-align: center;
 }
-i {
-    font-size: 115px;
-    color: #bbbbbb
 
+/** Globe Styles **/
+.globe {
+    text-align: center;
 }
+
+/** Globe i styles **/
+.globe i {
+    font-size: 115px;
+    color: #bbbbbb;
+}
+/** Continents **/
+.continents {
+    padding: 30px;
+}
+
+/** Continents p **/
 .continents p {
     text-indent: 50px;
+}
+
+/** Continents i styles **/
+.continents i {
+    font-size: 20px;
+    color: #3FC380;
+}
+
+
+/** Continent styles **/
+.continent {
+    padding: 30px;
+}
+
+.continent > .panel {
+
+    box-shadow: 0 0 20px rgba(0,0,0,.7);
+    padding: 10px 30px;
 }
