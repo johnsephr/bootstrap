@@ -1,3 +1,7 @@
+body {
+    font-family: "Courier New", Courier, monospace
+}
+
 h1 {
     color: #555555;
     font-size: 85px;
@@ -34,6 +38,6 @@ i {
     color: #bbbbbb
 
 }
-h1, h2 {
-    font-family: "Courier New", Courier, monospace
+.continents p {
+    text-indent: 50px;
 }
