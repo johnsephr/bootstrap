@@ -1,12 +1,61 @@
 body {
-    font-family: "Courier New", Courier, monospace
+    font-family: "Courier New", Courier, monospace;
+}
+/** Centering Classes **/
+
+.centerer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.v-center {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.left {
+    left: 25%;
+}
+.right {
+    right: 25%;
 }
 
+/** Buttons **/
+
+.buttons {
+    height: 5em;
+    position: relative;
+}
+
+
+.btn {
+    text-align: center;
+}
+
+/** NavBar Styles **/
+
+.navbar ul {
+    background-color: #74D097;
+    height: 60px;
+    padding-left: 15px;
+    border: black;
+}
+
+.navbar a {
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+}
+.navbar a:hover {
+    color: #74D097;
+}
 
 /** Global H1 styles **/
 
 h1 {
-    color: #555555;
+    color: #74D097;
     font-size: 85px;
     text-align: center;
 }
@@ -30,7 +79,7 @@ h2 {
 
 .globe i {
     font-size: 115px;
-    color: #bbbbbb;
+    color: #74D097;
 }
 
 
@@ -84,3 +133,27 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/** All Continents Heading Color **/
+
+.panel h2 {
+    color: #74D097;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
