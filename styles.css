@@ -1,159 +1,116 @@
+/* ------------ Variables ------------ */
+/* ------------ Mixins ------------ */
+/* ------------ Global Styles ------------ */
 body {
-    font-family: "Courier New", Courier, monospace;
-}
-/** Centering Classes **/
+  font-family: "Courier New", Courier, monospace; }
 
-.centerer {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-.v-center {
+/** Global H1 styles **/
+h1 {
+  color: #74D097;
+  font-size: 85px;
+  text-align: center; }
+
+/** Global H2 styles **/
+h2 {
+  text-align: center; }
+
+/** Globe Styles **/
+.globe {
+  text-align: center; }
+
+/** Globe i styles **/
+.globe i {
+  font-size: 115px;
+  color: #74D097; }
+
+/* ------------ Navbar ------------ */
+.navbar {
+  margin: 0; }
+  .navbar ul {
+    background-color: #74D097;
+    height: 60px;
+    border: black; }
+    .navbar ul li {
+      display: inline-block;
+      float: left;
+      width: auto;
+      height: 100%;
+      position: relative; }
+      .navbar ul li a {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+        height: auto;
+        line-height: 20px;
+        color: white;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative; }
+      .navbar ul li a:hover {
+        background-color: transparent !important; }
+    .navbar ul li:hover {
+      background-color: #ade3c2; }
+      .navbar ul li:hover a {
+        color: #329357; }
+
+/** Buttons **/
+.buttons {
+  height: 5em;
+  position: relative; }
+  .buttons .btn {
+    text-align: center; }
+  .buttons .left {
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
-}
-.left {
-    left: 25%;
-}
-.right {
-    right: 25%;
-}
-
-/** Buttons **/
-
-.buttons {
-    height: 5em;
-    position: relative;
-}
-
-
-.btn {
-    text-align: center;
-}
-
-/** NavBar Styles **/
-
-.navbar ul {
-    background-color: #74D097;
-    height: 60px;
-    padding-left: 15px;
-    border: black;
-}
-
-.navbar a {
-    font-family: "Courier New", Courier, monospace;
-    color: white;
-    font-size: 20px;
-    height: 100%;
-}
-.navbar a:hover {
-    color: #74D097;
-}
-
-/** Global H1 styles **/
-
-h1 {
-    color: #74D097;
-    font-size: 85px;
-    text-align: center;
-}
-
-
-/** Global H2 styles **/
-
-h2 {
-    text-align: center;
-}
-
-
-/** Globe Styles **/
-
-.globe {
-    text-align: center;
-}
-
-
-/** Globe i styles **/
-
-.globe i {
-    font-size: 115px;
-    color: #74D097;
-}
-
-
-/** Continents **/
-
-.continents {
-    padding: 30px;
-}
-
-
-/** Continents p **/
-
-.continents p {
-    text-indent: 50px;
-}
-
-
-/** Continents i styles **/
-
-.continents i {
-    font-size: 20px;
-    color: #3FC380;
-}
-
-
-/** Continent styles **/
-
-.continent {
-    padding: 30px;
-}
-
-.continent > .panel {
-    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
-    padding: 10px 30px;
-}
-
-
-/** Europe Photo **/
-
-.continent-photo {
-    height: 10em;
-    position: relative;
-    width: 100%;
-}
-
-.continent-image {
-    height: 80%;
-    width: auto;
+    left: 30%; }
+  .buttons .right {
+    top: 50%;
+    transform: translateY(-50%);
     position: absolute;
+    right: 30%; }
+  .buttons .center {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+    position: relative; }
+
+/* ------------ Continents ------------ */
+.continents {
+  padding: 30px; }
+
+/** Continents p **/
+.continents p {
+  text-indent: 50px; }
+
+/** Continents i styles **/
+.continents i {
+  font-size: 20px;
+  color: #3FC380; }
+
+/** Continent styles **/
+.continent {
+  padding: 30px; }
+
+.continent > .panel {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  padding: 10px 30px; }
+
+/** Europe Photo **/
+.continent-photo {
+  height: 10em;
+  position: relative;
+  width: 100%; }
+
+.continent-image {
+  height: 80%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 /** All Continents Heading Color **/
-
 .panel h2 {
-    color: #74D097;
-}
+  color: #74D097; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,185 @@
+/* ------------ Variables ------------ */
+
+$lt-grey: #F5F5F5;
+$green: #74D097;
+$lt-green: lighten($green, 15%);
+$dk-green: darken($green, 25%);
+
+/* ------------ Mixins ------------ */
+
+// Centers Horizontally and Vertically
+@mixin centerer ($position:relative) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: $position;
+}
+
+// Centers horizontally
+@mixin h-center ($position:relative) {
+    left: 50%;
+    transform: translateX(-50%);
+    position: $position;
+}
+
+// Centers vertically
+@mixin v-center ($position:relative) {
+    top: 50%;
+    transform: translateY(-50%);
+    position: $position;
+}
+
+
+/* ------------ Global Styles ------------ */
+
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+/** Global H1 styles **/
+
+h1 {
+    color: #74D097;
+    font-size: 85px;
+    text-align: center;
+}
+
+
+/** Global H2 styles **/
+
+h2 {
+    text-align: center;
+}
+
+
+/** Globe Styles **/
+
+.globe {
+    text-align: center;
+}
+
+
+/** Globe i styles **/
+
+.globe i {
+    font-size: 115px;
+    color: #74D097;
+}
+
+
+/* ------------ Navbar ------------ */
+
+.navbar {
+    margin: 0;
+    ul {
+        background-color: $green;
+        height: 60px;
+        border: black;
+        li {
+            display: inline-block;
+            float: left;
+            width: auto;
+            height: 100%;
+            position: relative;
+            a {
+                font-family: "Courier New", Courier, monospace;
+                font-size: 20px;
+                height: auto;
+                line-height: 20px;
+                color: white;
+                @include v-center;
+            }
+            a:hover {
+                background-color: rgba(0, 0, 0, 0) !important;
+            }
+        }
+        li:hover {
+            background-color: $lt-green;
+            a {
+                color: $dk-green;
+            }
+        }
+    }
+}
+
+
+/** Buttons **/
+
+.buttons {
+    height: 5em;
+    position: relative;
+    .btn {
+        text-align: center;
+    }
+    .left {
+        @include v-center(absolute);
+        left: 30%;
+    }
+    .right {
+        @include v-center(absolute);
+        right: 30%;
+    }
+    .center {
+        @include centerer;
+    }
+}
+
+
+/* ------------ Continents ------------ */
+
+.continents {
+    padding: 30px;
+}
+
+
+/** Continents p **/
+
+.continents p {
+    text-indent: 50px;
+}
+
+
+/** Continents i styles **/
+
+.continents i {
+    font-size: 20px;
+    color: #3FC380;
+}
+
+
+/** Continent styles **/
+
+.continent {
+    padding: 30px;
+}
+
+.continent > .panel {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    padding: 10px 30px;
+}
+
+
+/** Europe Photo **/
+
+.continent-photo {
+    height: 10em;
+    position: relative;
+    width: 100%;
+}
+
+.continent-image {
+    height: 80%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/** All Continents Heading Color **/
+
+.panel h2 {
+    color: #74D097;
+}
