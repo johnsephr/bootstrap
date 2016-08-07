@@ -18,7 +18,6 @@ h2 {
 .globe {
     text-align: center;
 }
-
 /** Globe i styles **/
 .globe i {
     font-size: 115px;
@@ -39,15 +38,23 @@ h2 {
     font-size: 20px;
     color: #3FC380;
 }
-
-
 /** Continent styles **/
 .continent {
     padding: 30px;
 }
-
 .continent > .panel {
-
     box-shadow: 0 0 20px rgba(0,0,0,.7);
     padding: 10px 30px;
+}
+/** Europe Photo **/
+.continent-photo {
+    height: 10em;
+    position: relative;
+}
+.continent-image img {
+    height: 80%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
