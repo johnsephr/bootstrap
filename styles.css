@@ -1,5 +1,8 @@
 /* ------------ Variables ------------ */
 /* ------------ Mixins ------------ */
+.ion-android-globe:hover {
+  color: #329357; }
+
 /* ------------ Global Styles ------------ */
 body {
   font-family: "Courier New", Courier, monospace; }
@@ -35,7 +38,8 @@ h2 {
       float: left;
       width: auto;
       height: 100%;
-      position: relative; }
+      position: relative;
+      color: #329357; }
       .navbar ul li a {
         font-family: "Courier New", Courier, monospace;
         font-size: 20px;
@@ -48,11 +52,19 @@ h2 {
       .navbar ul li a:hover {
         background-color: transparent !important; }
     .navbar ul li:hover {
-      background-color: #ade3c2; }
+      background-color: #329357; }
       .navbar ul li:hover a {
-        color: #329357; }
+        color: white; }
 
 /** Buttons **/
+.btn-greenbtn {
+  background-color: #74D097;
+  color: white; }
+
+.btn-greenbtn:hover {
+  color: white;
+  background-color: #329357; }
+
 .buttons {
   height: 5em;
   position: relative; }
@@ -78,6 +90,9 @@ h2 {
 .continents {
   padding: 30px; }
 
+.well {
+  background-color: #F5F5F5; }
+
 /** Continents p **/
 .continents p {
   text-indent: 50px; }
@@ -91,9 +106,14 @@ h2 {
 .continent {
   padding: 30px; }
 
-.continent > .panel {
+.continent .panel {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   padding: 10px 30px; }
+
+.panel:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.85); }
+  .panel:hover h2 {
+    color: #329357; }
 
 /** Europe Photo **/
 .continent-photo {

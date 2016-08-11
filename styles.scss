@@ -4,6 +4,7 @@ $lt-grey: #F5F5F5;
 $green: #74D097;
 $lt-green: lighten($green, 15%);
 $dk-green: darken($green, 25%);
+$base-font: "Courier New", Courier, monospace;
 
 /* ------------ Mixins ------------ */
 
@@ -14,6 +15,11 @@ $dk-green: darken($green, 25%);
     transform: translate(-50%, -50%);
     position: $position;
 }
+// Globe Icon
+.ion-android-globe:hover {
+    color: $dk-green;
+}
+
 
 // Centers horizontally
 @mixin h-center ($position:relative) {
@@ -31,16 +37,15 @@ $dk-green: darken($green, 25%);
 
 
 /* ------------ Global Styles ------------ */
-
 body {
-    font-family: "Courier New", Courier, monospace;
+    font-family: $base-font;
 }
 
 
 /** Global H1 styles **/
 
 h1 {
-    color: #74D097;
+    color: $green;
     font-size: 85px;
     text-align: center;
 }
@@ -64,7 +69,7 @@ h2 {
 
 .globe i {
     font-size: 115px;
-    color: #74D097;
+    color: $green;
 }
 
 
@@ -82,8 +87,9 @@ h2 {
             width: auto;
             height: 100%;
             position: relative;
+            color: $dk-green;
             a {
-                font-family: "Courier New", Courier, monospace;
+                font-family: $base-font;
                 font-size: 20px;
                 height: auto;
                 line-height: 20px;
@@ -95,9 +101,9 @@ h2 {
             }
         }
         li:hover {
-            background-color: $lt-green;
+            background-color: $dk-green;
             a {
-                color: $dk-green;
+                color: white;
             }
         }
     }
@@ -105,12 +111,20 @@ h2 {
 
 
 /** Buttons **/
-
+.btn-greenbtn {
+    background-color: $green;
+    color: white;
+}
+.btn-greenbtn:hover {
+    color: white;
+    background-color: $dk-green;
+}
 .buttons {
     height: 5em;
     position: relative;
     .btn {
         text-align: center;
+
     }
     .left {
         @include v-center(absolute);
@@ -131,8 +145,9 @@ h2 {
 .continents {
     padding: 30px;
 }
-
-
+.well {
+    background-color: $lt-grey;
+}
 /** Continents p **/
 
 .continents p {
@@ -154,12 +169,16 @@ h2 {
     padding: 30px;
 }
 
-.continent > .panel {
+.continent .panel {
     box-shadow: 0 0 20px rgba(0, 0, 0, .7);
     padding: 10px 30px;
 }
-
-
+.panel:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .85);
+    h2 {
+        color: $dk-green;
+    }
+}
 /** Europe Photo **/
 
 .continent-photo {
@@ -181,5 +200,5 @@ h2 {
 /** All Continents Heading Color **/
 
 .panel h2 {
-    color: #74D097;
+    color: $green;
 }
