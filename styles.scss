@@ -48,6 +48,7 @@ h1 {
     color: $green;
     font-size: 85px;
     text-align: center;
+    margin-top: -2px;
 }
 
 
@@ -77,6 +78,7 @@ h2 {
 
 .navbar {
     margin: 0;
+    padding-left: 10px;
     ul {
         background-color: $green;
         height: 60px;
@@ -108,37 +110,16 @@ h2 {
         }
     }
 }
-
-
 /** Buttons **/
 .btn-greenbtn {
     background-color: $green;
     color: white;
+    margin-top: 9px;
 }
 .btn-greenbtn:hover {
     color: white;
     background-color: $dk-green;
 }
-.buttons {
-    height: 5em;
-    position: relative;
-    .btn {
-        text-align: center;
-
-    }
-    .left {
-        @include v-center(absolute);
-        left: 30%;
-    }
-    .right {
-        @include v-center(absolute);
-        right: 30%;
-    }
-    .center {
-        @include centerer;
-    }
-}
-
 
 /* ------------ Continents ------------ */
 
@@ -170,7 +151,7 @@ h2 {
 }
 
 .continent .panel {
-    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
     padding: 10px 30px;
 }
 .panel:hover {

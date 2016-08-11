@@ -11,7 +11,8 @@ body {
 h1 {
   color: #74D097;
   font-size: 85px;
-  text-align: center; }
+  text-align: center;
+  margin-top: -2px; }
 
 /** Global H2 styles **/
 h2 {
@@ -28,7 +29,8 @@ h2 {
 
 /* ------------ Navbar ------------ */
 .navbar {
-  margin: 0; }
+  margin: 0;
+  padding-left: 10px; }
   .navbar ul {
     background-color: #74D097;
     height: 60px;
@@ -59,32 +61,12 @@ h2 {
 /** Buttons **/
 .btn-greenbtn {
   background-color: #74D097;
-  color: white; }
+  color: white;
+  margin-top: 9px; }
 
 .btn-greenbtn:hover {
   color: white;
   background-color: #329357; }
-
-.buttons {
-  height: 5em;
-  position: relative; }
-  .buttons .btn {
-    text-align: center; }
-  .buttons .left {
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    left: 30%; }
-  .buttons .right {
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    right: 30%; }
-  .buttons .center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative; }
 
 /* ------------ Continents ------------ */
 .continents {
@@ -107,7 +89,7 @@ h2 {
   padding: 30px; }
 
 .continent .panel {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   padding: 10px 30px; }
 
 .panel:hover {
